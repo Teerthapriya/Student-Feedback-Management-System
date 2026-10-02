@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Welcome to Student Dashboard</h1>
+
+    <h2>Student Feedback Management System</h2>
+
+    <form action="/feedback" method="POST">
+
+        <input
+            type="text"
+            name="student_name"
+            placeholder="Enter Student Name"
+            required>
+
+        <br>
+
+        <input
+            type="text"
+            name="subject"
+            placeholder="Enter Subject"
+            required>
+
+        <br>
+
+        <label>Rating:</label>
+
+        <select name="rating" required>
+            <option value="">Select Rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+
+        <br>
+
+        <textarea
+            name="feedback"
+            placeholder="Enter your feedback"
+            rows="5"
+            required></textarea>
+
+        <br>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+    <br><br>
+
+    <a href="/logout">
+        <button type="button">Logout</button>
+    </a>
+
+</body>
+</html>

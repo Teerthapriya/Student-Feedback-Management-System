@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Welcome to Admin Dashboard</h1>
+
+    <br>
+
+    <a href="{{ url_for('view_feedback') }}">
+        <button type="button">View Student Feedback</button>
+    </a>
+
+    <br><br>
+
+    <a href="{{ url_for('logout') }}">
+        <button type="button">Logout</button>
+    </a>
+
+</body>
+</html>

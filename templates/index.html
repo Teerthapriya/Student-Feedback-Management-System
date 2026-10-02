@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Student Feedback Management System</h1>
+
+    <p>Welcome to the Student Feedback Management System</p>
+
+    <br>
+
+    <a href="{{ url_for('student_login') }}">
+        <button type="button">Student Login</button>
+    </a>
+
+    <br><br>
+
+    <a href="{{ url_for('register') }}">
+        <button type="button">Student Registration</button>
+    </a>
+
+    <br><br>
+
+    <a href="{{ url_for('admin_login') }}">
+        <button type="button">Admin Login</button>
+    </a>
+
+</body>
+</html>
